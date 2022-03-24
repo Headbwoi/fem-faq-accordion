@@ -1,0 +1,120 @@
+html {
+  font-size: 12px;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  min-height: 100vh; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #af67e9, #6565e7);
+  padding: 2.1875rem 1.67rem;
+  overflow: hidden; }
+
+@media (min-width: 1000px) {
+  .hide-for-desktop {
+    display: none; } }
+@media (max-width: 999px) {
+  .hide-for-mobile {
+    display: none; } }
+.accordion {
+  position: relative;
+  background-color: white;
+  max-width: 27.5rem;
+  width: 100%;
+  border-radius: 2rem;
+  padding-bottom: 2rem;
+  margin: 7rem 0 1rem; }
+  @media (min-width: 1000px) {
+    .accordion {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      max-width: 76.67rem;
+      min-height: 42rem; } }
+  .accordion-mockup {
+    position: relative;
+    width: 100%;
+    height: 10.83rem; }
+    .accordion-mockup img.img {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0px 23px 0px #e7e7e9); }
+      @media (min-width: 1000px) {
+        .accordion-mockup img.img {
+          top: 50%;
+          left: -18%;
+          transform: translateY(-50%);
+          height: 30.42rem;
+          filter: none; } }
+    .accordion-mockup img.bg-pattern {
+      position: absolute;
+      top: -365%;
+      left: -113%;
+      width: 195%; }
+  .accordion-group {
+    padding: 1.67rem; }
+    .accordion-group h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2.5rem; }
+      @media (min-width: 1000px) {
+        .accordion-group h1 {
+          text-align: left; } }
+    .accordion-group-item {
+      margin-bottom: 1.3rem;
+      border-bottom: 1px solid #e7e7e9;
+      cursor: pointer; }
+      .accordion-group-item .accordion-question {
+        position: relative;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        transition: .3s ease-in-out; }
+        .accordion-group-item .accordion-question p {
+          color: #4a4b5e;
+          font-size: 1.25rem; }
+          .accordion-group-item .accordion-question p:hover {
+            color: #f47c57; }
+        .accordion-group-item .accordion-question img {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          color: #f47c57;
+          transition: .4s ease-in-out; }
+      .accordion-group-item .accordion-answer {
+        height: 0;
+        overflow: hidden;
+        transition: all .5s ease; }
+        .accordion-group-item .accordion-answer p {
+          color: #787887;
+          font-size: 1.17rem; }
+      .accordion-group-item.active .accordion-question p {
+        color: #1d1e35; }
+      .accordion-group-item.active .accordion-question img {
+        transform: rotate(180deg); }
+      .accordion-group-item.active .accordion-answer {
+        height: auto;
+        margin-bottom: 1.25rem; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
+
+/*# sourceMappingURL=styles.css.map */
